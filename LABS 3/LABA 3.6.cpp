@@ -1,4 +1,4 @@
-﻿// LABA 3.6.cpp 
+// LABA 3.6.cpp 
 // Дано число A. Вычислить A8 , используя вспомогательную переменную и три операции умножения.
 
 #include <iostream>
@@ -8,11 +8,10 @@ using namespace std;
 int main()
 {
 	setlocale(0, "");
-	int A, triple;
+	int A, B;
 	cout << "Введите А" << endl;
 	cin >> A;
-	triple = pow(A, 3);
-	A = A * A * triple * triple;
-	cout << "А в 8 степени равно " << A;
-}
-
+	B = A * A;
+	A = B * B;
+	B = A * A;
+	cout << "А в 8 степени равно " << B;
