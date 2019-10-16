@@ -1,20 +1,18 @@
-﻿// LABA 3.7.cpp 
+// LABA 3.7.cpp 
 // Дано число A. Вычислить A15, используя две вспомогательные переменные и пять операций умножения.
 
 #include <iostream>
-#include <math.h>
 using namespace std;
 
 int main()
 {
 	setlocale(0, "");
-	int A, triple, fifth;
+	int A, B, C;
 	cout << "Введите A " << endl;
 	cin >> A;
-	triple = pow(A, 3);
-	fifth = pow(A, 5);
-	A = fifth * fifth * triple * A * A;
-	cout << "А в 15 степени равно: " << A;
+    B = A * A * A;
+    C = B * B;
+    C = C * C * B;
+	cout << "А в 15 степени равно: " << C;
 	return 0;
 }
-
