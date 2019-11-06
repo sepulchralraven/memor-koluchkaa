@@ -12,9 +12,11 @@ int main()
 	c = N % 10;
 	b = N % 100 / 10;
 	a = N / 100;
-	if (a > b > c or a < b < c) {
+	if (a > b and b > c) {
 		cout << "Высказывание истинно";
 	}
-	else
-		cout << "Высказывание ложно";
+	else if (c > b and b > a)
+		cout << "Высказывание истинно";
+	else 
+	    cout << "Высказывание ложно";
 }
